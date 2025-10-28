@@ -23,3 +23,64 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+// LinkedIn posts styling with dark mode support
+.linkedin-post {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 3px solid #0077b5;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+
+  .linkedin-post-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .linkedin-icon {
+    color: #0077b5;
+    margin-right: 0.5rem;
+  }
+
+  .linkedin-post-content {
+    margin-bottom: 0.5rem;
+  }
+
+  .linkedin-post-link {
+    color: #0077b5;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .linkedin-external-icon {
+    font-size: 0.8rem;
+    margin-left: 0.25rem;
+  }
+}
+
+// Dark mode specific adjustments
+html[data-theme='dark'] .linkedin-post {
+  background-color: #2d3748;
+  border-left-color: #4A9EFF;
+  
+  .linkedin-post-meta {
+    color: #a0aec0;
+  }
+  
+  .linkedin-post-content {
+    color: #e2e8f0;
+  }
+  
+  .linkedin-icon {
+    color: #4A9EFF;
+  }
+  
+  .linkedin-post-link {
+    color: #4A9EFF;
+  }
+}
