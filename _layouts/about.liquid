@@ -56,6 +56,11 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- LinkedIn posts -->
+    {% if page.linkedin_posts and page.linkedin_posts.enabled %}
+      {% include linkedin_posts.liquid %}
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
